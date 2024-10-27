@@ -1,23 +1,16 @@
 import "./App.css";
-import HeadRadio from "./components/HeadRadio";
-import Menu from "./components/Menu";
-import PLayerB from "./components/PlayerB";
-import Footer from "./components/Footer";
-import Carousel from "./components/Carousel";
-import Repro from "./components/Repro_1";
-import Promocion from "./components/Promocion";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <HeadRadio />
-      <Menu />
-      <Repro/>
-      <Carousel />
-      <Promocion/>      
-      <Footer/>
-      <PLayerB/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<AboutPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
