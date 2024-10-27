@@ -6,7 +6,7 @@ import Carousel from "../components/Carousel";
 import Repro from "../components/Repro_1";
 import Promocion from "../components/Promocion";
 
-function homepage() {
+function Homepage() {
   return (
     <>
       <HeadRadio />
@@ -20,4 +20,4 @@ function homepage() {
   );
 }
 
-export default homepage;
+export default Homepage;

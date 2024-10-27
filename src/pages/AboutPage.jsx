@@ -1,12 +1,13 @@
-
+import HeadRadio from "../components/HeadRadio";
 import PlayerB from "../components/PlayerB";
 
 function AboutPage() {
   return (
     <div>
-        <PlayerB/>
+      <HeadRadio />
+      <PlayerB />
     </div>
-  )
+  );
 }
 
-export default AboutPage
+export default AboutPage;

@@ -1,6 +1,7 @@
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
 
 function HeadRadio() {
   return (
@@ -37,6 +38,20 @@ function HeadRadio() {
           >
             <AiFillTikTok />
           </a>
+          <button
+            className=" hover:animate-browsein bg-indo_green text-base font-bold rounded-full py-1 px-4 text-white flex justify-evenly items-center gap-3 "
+            onClick={(event) => {
+              event.preventDefault();
+              window.open(
+                "http://localhost:5173/Reproductor",
+                "carga_llamados_nuevo",
+                "width=400, height=650, scrollbars=no, menubar=no, location=no, resizable=no"
+              );
+            }}
+          >
+            <FaPlay />
+            Escuchanos
+          </button>
         </div>
       </div>
       <div></div>
